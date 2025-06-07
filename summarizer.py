@@ -25,6 +25,7 @@ class Summarizer():
             input_variables=["text", "style", "length"],
             template="""
             You are a helpful assistant. Summarize the following text in the '{style}' style with a length of '{length}' words.
+            If the text does not contain enough information to generate a summary, respond with "I don’t know".
             
             Text: {text}
             """
@@ -33,7 +34,7 @@ class Summarizer():
             input_variables=["text", "style", "length"],
             template="""
             You are a helpful assistant. Combine the following summaries into a single one, keeping the '{style}' style and length '{length}' words.
-            
+            If the summaries contradict each other or are incomplete, respond with "I don’t know".
             Summaries:
             {text}
             """
