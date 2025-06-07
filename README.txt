@@ -3,6 +3,7 @@ AI Document Assistant
 
 A Streamlit-based application that uses RAG (Retrieval-Augmented Generation)
 and summarization to help users ask questions and get summaries based on uploaded documents.
+Whole project is running local so without GPU some taskts might take long.
 
 Features:
 ---------
