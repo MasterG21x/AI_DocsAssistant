@@ -136,7 +136,7 @@ elif menu == "📝 Summarize":
                 try:
                     text = doc_manager.load_single_file_as_text(chosen_file)
                     if text is None:
-                        st.warning(f"Nie udało się wczytać {chosen_file}.")
+                        st.warning(f"Can't load file: {chosen_file}.")
                 except Exception as e:
                     st.error(f"Error loading file: {e}")
 
