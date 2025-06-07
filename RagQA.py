@@ -23,7 +23,7 @@ class RagQA():
         self.base_map_prompt = PromptTemplate(
             input_variables=["context", "question"],
             template="""
-            Answer the following question using ONLY the provided context:
+            You are a helpful assistant. Answer the following question using ONLY the provided context:
             {context}
             ---------
             Answer the question based on the context above: {question}
