@@ -24,16 +24,16 @@ class Summarizer():
         self.base_map_prompt = PromptTemplate(
             input_variables=["text", "style", "length"],
             template="""
-            Summarize the following text in the '{style}' style with a length of '{length}':
-
+            You are a helpful assistant. Summarize the following text in the '{style}' style with a length of '{length}' words.
+            
             Text: {text}
             """
         )
         self.base_combine_prompt = PromptTemplate(
             input_variables=["text", "style", "length"],
             template="""
-            Combine the following summaries into a single one, keeping the '{style}' style and length '{length}':
-
+            You are a helpful assistant. Combine the following summaries into a single one, keeping the '{style}' style and length '{length}' words.
+            
             Summaries:
             {text}
             """
